@@ -1,9 +1,16 @@
+'use client'
+
 import Image from 'next/image'
+import styled from 'styled-components'
 import styles from './page.module.css'
+
+const Border = styled.div`
+  border: 25px dashed pink;
+`
 
 export default function Home() {
   return (
-    <div className={styles.container}>
+    <Border>
       <main className={styles.main}>
         <h1 className={styles.title}>
           Welcome to <a href="https://nextjs.org">Next.js 13!</a>
@@ -52,6 +59,6 @@ export default function Home() {
           </span>
         </a>
       </footer>
-    </div>
+    </Border>
   )
 }
